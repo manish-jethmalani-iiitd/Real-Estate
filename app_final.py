@@ -72,6 +72,7 @@ def index():
                 y_axis_coordinates = np.array(cal_sp)
                 color = "brown"
                 legend_label = "California"
+                p.left[0].formatter.use_scientific = False
                 p.line(x_axis_coordinates,
                        y_axis_coordinates,
                        color=color,
@@ -114,6 +115,7 @@ def index():
                 y_axis_coordinates = np.array(Mas_sp)
                 color = "blue"
                 legend_label = "Massachusetts"
+                p.left[0].formatter.use_scientific = False
                 p.line(x_axis_coordinates,
                        y_axis_coordinates,
                        color=color,
@@ -158,6 +160,7 @@ def index():
                 y_axis_coordinates = np.array(Newj_sp)
                 color = "orange"
                 legend_label = "New Jersey"
+                p.left[0].formatter.use_scientific = False
                 p.line(x_axis_coordinates,
                        y_axis_coordinates,
                        color=color,
@@ -203,6 +206,7 @@ def index():
                 y_axis_coordinates = np.array(Dist_sp)
                 color = "yellow"
                 legend_label = "District of Columbia"
+                p.left[0].formatter.use_scientific = False
                 p.line(x_axis_coordinates,
                        y_axis_coordinates,
                        color=color,
@@ -245,6 +249,7 @@ def index():
                 y_axis_coordinates = np.array(Wash_sp)
                 color = "deeppink"
                 legend_label = "Washington"
+                p.left[0].formatter.use_scientific = False
                 p.line(x_axis_coordinates,
                        y_axis_coordinates,
                        color=color,
@@ -762,6 +767,7 @@ def index():
                 p1.legend.click_policy = "hide"
                 p1.legend.label_text_font_size = "7pt"
                 p1.add_layout(p1.legend[0], 'right')
+                p1.left[0].formatter.use_scientific = False
 
                 year = time_yearly
                 per = df2["California"].to_list()
@@ -785,6 +791,7 @@ def index():
                 p2.legend.click_policy = "hide"
                 p2.legend.label_text_font_size = "7pt"
                 p2.add_layout(p2.legend[0], 'right')
+                p2.left[0].formatter.use_scientific = False
 
                 year = time_monthly
                 per = df3["California"].to_list()
@@ -808,6 +815,7 @@ def index():
                 p3.legend.click_policy = "hide"
                 p3.legend.label_text_font_size = "7pt"
                 p3.add_layout(p3.legend[0], 'right')
+                p3.left[0].formatter.use_scientific = False
 
                 year = time_quarterly
                 per = df4["California"].to_list()
@@ -831,6 +839,7 @@ def index():
                 p4.legend.click_policy = "hide"
                 p4.legend.label_text_font_size = "7pt"
                 p4.add_layout(p4.legend[0], 'right')
+                p4.left[0].formatter.use_scientific = False
 
                 # put all the plots in a VBox
                 p = column(p1, p2, p3, p4)
@@ -900,6 +909,7 @@ def index():
                 p1.legend.click_policy = "hide"
                 p1.legend.label_text_font_size = "7pt"
                 p1.add_layout(p1.legend[0], 'right')
+                p1.left[0].formatter.use_scientific = False
 
                 year = time_yearly
                 per = df2["Massachusetts"].to_list()
@@ -923,6 +933,7 @@ def index():
                 p2.legend.click_policy = "hide"
                 p2.legend.label_text_font_size = "7pt"
                 p2.add_layout(p2.legend[0], 'right')
+                p2.left[0].formatter.use_scientific = False
 
                 year = time_monthly
                 per = df3["Massachusetts"].to_list()
@@ -946,6 +957,7 @@ def index():
                 p3.legend.click_policy = "hide"
                 p3.legend.label_text_font_size = "7pt"
                 p3.add_layout(p3.legend[0], 'right')
+                p3.left[0].formatter.use_scientific = False
 
                 year = time_quarterly
                 per = df4["Massachusetts"].to_list()
@@ -969,6 +981,7 @@ def index():
                 p4.legend.click_policy = "hide"
                 p4.legend.label_text_font_size = "7pt"
                 p4.add_layout(p4.legend[0], 'right')
+                p4.left[0].formatter.use_scientific = False
 
                 # put all the plots in a VBox
                 p = column(p1, p2, p3, p4)
@@ -1036,6 +1049,7 @@ def index():
                 p1.legend.click_policy = "hide"
                 p1.legend.label_text_font_size = "7pt"
                 p1.add_layout(p1.legend[0], 'right')
+                p1.left[0].formatter.use_scientific = False
 
                 year = time_yearly
                 per = df2["NewJersey"].to_list()
@@ -1059,6 +1073,7 @@ def index():
                 p2.legend.click_policy = "hide"
                 p2.legend.label_text_font_size = "7pt"
                 p2.add_layout(p2.legend[0], 'right')
+                p2.left[0].formatter.use_scientific = False
 
                 year = time_monthly
                 per = df3["NewJersey"].to_list()
@@ -1082,6 +1097,7 @@ def index():
                 p3.legend.click_policy = "hide"
                 p3.legend.label_text_font_size = "7pt"
                 p3.add_layout(p3.legend[0], 'right')
+                p3.left[0].formatter.use_scientific = False
 
                 year = time_quarterly
                 per = df4["NewJersey"].to_list()
@@ -1105,6 +1121,7 @@ def index():
                 p4.legend.click_policy = "hide"
                 p4.legend.label_text_font_size = "7pt"
                 p4.add_layout(p4.legend[0], 'right')
+                p4.left[0].formatter.use_scientific = False
 
                 # put all the plots in a VBox
                 p = column(p1, p2, p3, p4)
@@ -1172,6 +1189,7 @@ def index():
                 p1.legend.click_policy = "hide"
                 p1.legend.label_text_font_size = "7pt"
                 p1.add_layout(p1.legend[0], 'right')
+                p1.left[0].formatter.use_scientific = False
 
                 year = time_yearly
                 per = df2["DistrictofColumbia"].to_list()
@@ -1195,6 +1213,7 @@ def index():
                 p2.legend.click_policy = "hide"
                 p2.legend.label_text_font_size = "7pt"
                 p2.add_layout(p2.legend[0], 'right')
+                p2.left[0].formatter.use_scientific = False
 
                 year = time_monthly
                 per = df3["DistrictofColumbia"].to_list()
@@ -1218,6 +1237,7 @@ def index():
                 p3.legend.click_policy = "hide"
                 p3.legend.label_text_font_size = "7pt"
                 p3.add_layout(p3.legend[0], 'right')
+                p3.left[0].formatter.use_scientific = False
 
                 year = time_quarterly
                 per = df4["DistrictofColumbia"].to_list()
@@ -1241,6 +1261,7 @@ def index():
                 p4.legend.click_policy = "hide"
                 p4.legend.label_text_font_size = "7pt"
                 p4.add_layout(p4.legend[0], 'right')
+                p4.left[0].formatter.use_scientific = False
 
                 # put all the plots in a VBox
                 p = column(p1, p2, p3, p4)
@@ -1308,6 +1329,7 @@ def index():
                 p1.legend.click_policy = "hide"
                 p1.legend.label_text_font_size = "7pt"
                 p1.add_layout(p1.legend[0], 'right')
+                p1.left[0].formatter.use_scientific = False
 
                 year = time_yearly
                 per = df2["Washington"].to_list()
@@ -1331,6 +1353,7 @@ def index():
                 p2.legend.click_policy = "hide"
                 p2.legend.label_text_font_size = "7pt"
                 p2.add_layout(p2.legend[0], 'right')
+                p2.left[0].formatter.use_scientific = False
 
                 year = time_monthly
                 per = df3["Washington"].to_list()
@@ -1354,6 +1377,7 @@ def index():
                 p3.legend.click_policy = "hide"
                 p3.legend.label_text_font_size = "7pt"
                 p3.add_layout(p3.legend[0], 'right')
+                p3.left[0].formatter.use_scientific = False
 
                 year = time_quarterly
                 per = df4["Washington"].to_list()
@@ -1377,6 +1401,7 @@ def index():
                 p4.legend.click_policy = "hide"
                 p4.legend.label_text_font_size = "7pt"
                 p4.add_layout(p4.legend[0], 'right')
+                p4.left[0].formatter.use_scientific = False
 
                 # put all the plots in a VBox
                 p = column(p1, p2, p3, p4)
@@ -1485,6 +1510,7 @@ def index2():
                     
             #p.legend.location = "top_left"
             p.add_layout(p.legend[0], 'right')
+            p.left[0].formatter.use_scientific = False
             p.legend.click_policy="hide"
  
             
@@ -1532,6 +1558,7 @@ def index2():
             p.legend.click_policy = "hide"
             p.legend.label_text_font_size = "7pt"
             p.add_layout(p.legend[0], 'right')
+            p.left[0].formatter.use_scientific = False
             
         elif var1 == "Price vs Area(Square foot)":
             # lst = ["2007-11-23", "2008-11-23","2010-11-23","2012-11-23"]
@@ -1880,6 +1907,7 @@ def index2():
             p1.legend.click_policy = "hide"
             p1.legend.label_text_font_size = "7pt"
             p1.add_layout(p1.legend[0], 'right')
+            p1.left[0].formatter.use_scientific = False
 
 
 
@@ -1904,6 +1932,7 @@ def index2():
             p2.legend.click_policy = "hide"
             p2.legend.label_text_font_size = "7pt"
             p2.add_layout(p2.legend[0], 'right')
+            p2.left[0].formatter.use_scientific = False
 
 
             p3 = figure(x_axis_type = "datetime",width=600, plot_height=200, title=None)
@@ -1927,6 +1956,7 @@ def index2():
             p3.legend.click_policy = "hide"
             p3.legend.label_text_font_size = "7pt"
             p3.add_layout(p3.legend[0], 'right')
+            p3.left[0].formatter.use_scientific = False
 
 
             p4 = figure(x_axis_type = "datetime",width=600, plot_height=200, title=None)
@@ -1950,6 +1980,7 @@ def index2():
             p4.legend.click_policy = "hide"
             p4.legend.label_text_font_size = "7pt"
             p4.add_layout(p4.legend[0], 'right')
+            p4.left[0].formatter.use_scientific = False
 
 
 
